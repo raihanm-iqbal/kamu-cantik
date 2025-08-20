@@ -1,0 +1,22 @@
+@import "compass/css3";
+
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background: black;
+}
+
+canvas {
+  display: block;
+}
+/* Animasi blink */
+@keyframes blink-animation {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink-animation 1s infinite;
+}
